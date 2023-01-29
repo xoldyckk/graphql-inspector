@@ -1,4 +1,6 @@
 branch: main
 schema: schema.graphql
+env:
+  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 notifications:
-  slack: ${{ secrets.SLACK_WEBHOOK_URL }}
+  slack: ${{ vars.SLACK_WEBHOOK_URL }}
