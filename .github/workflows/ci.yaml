@@ -6,9 +6,12 @@ jobs:
   test:
     name: Check Schema
     runs-on: ubuntu-latest
-    run: echo "$SLACK_WEBHOOK_URL"
 
     steps:
+      - name: "Echo environment variable"
+        env:
+        run: echo ${{ vars.SLACK_WEBHOOK_URL }}"
+
       - name: Checkout
         uses: actions/checkout@master
 
