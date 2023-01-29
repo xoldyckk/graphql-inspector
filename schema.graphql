@@ -1,0 +1,13 @@
+type User {
+  userName: String!
+  age: Int!
+}
+
+type Post {
+  caption: String!
+}
+
+type Query {
+  user: User!
+  post(id: String!): Post!
+}
