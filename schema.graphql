@@ -8,6 +8,6 @@ type Post {
 }
 
 type Query {
-  user: User!
+  user: User
   post(id: String!): Post
 }
