@@ -9,8 +9,7 @@ jobs:
 
     steps:
       - name: "Echo environment variable"
-        env:
-        run: echo ${{ vars.SLACK_WEBHOOK_URL }}"
+        run: echo "${{ vars.SLACK_WEBHOOK_URL }}"
 
       - name: Checkout
         uses: actions/checkout@master
